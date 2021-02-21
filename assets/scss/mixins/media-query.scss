@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+@mixin screenSm {
+    @media (max-width: #{$screen-sm}) {
+        @content;
+    }
+ }
+
+ // Medium devices
+ @mixin screenMd {
+    @media (max-width: #{$screen-md}) {
+        @content;
+    }
+ }

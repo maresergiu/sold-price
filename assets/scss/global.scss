@@ -1,0 +1,72 @@
+/* global style
+   ============ */
+
+/* general
+   ------- */
+* { box-sizing: border-box; }
+html { font-size: 62.5%; height: 100%; }
+html,
+body { min-height: 100%; padding: 0; margin: 0; font-family: $catRegular; }
+body { font-size: 16px; font-size: 1.6rem; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { padding: 0; margin: 0; font-family: $droidRegular; color: $color-two-primary; }
+
+p { margin: 0; font-family: $catRegular; }
+ul,
+ol,
+dl { margin: 0 0 20px 0; padding: 0; }
+ul li { display: inline-block; list-style-type: none; }
+a { display: inline-block; text-decoration: underline; color: $color-two-primary; }
+a:hover,
+a:focus { color: $color-four-primary; }
+
+main,
+figure { display: block; padding: 0; margin: 0; }
+
+/* bg colors */
+.bg-color-gray { background-color: $color-six-primary; }
+
+/* holders */
+.holder { max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 40px; }
+
+#main { display: flex; min-height: calc(100vh - (69px * 2)); }
+
+/* global modules */
+#site-header,
+#site-footer { padding: 20px 0; }
+
+/* grid */
+.quater { width: 25%;
+
+  @include screenSm { width: 100%; }
+}
+
+.one-third { width: 33.33%;
+
+  @include screenSm { width: 100%; }
+}
+
+.half { width: 50%;
+
+  @include screenSm { width: 100%; }
+}
+
+.two-thirds { width: 66.66%;
+
+  @include screenSm { width: 100%; }
+}
+
+.full-width { display: block; width: 100%;
+
+  @include screenSm { width: 100%; }
+}
+
+
+/* text */
+.sub-title { font-size: 26px; font-size: 2.6rem; padding-bottom: 0; }
+.text { font-size: 18px; font-size: 1.8rem; line-height: 32px; line-height: 3.2rem; }

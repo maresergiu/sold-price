@@ -1,0 +1,13 @@
+// libraries
+@import "libs/normalizer.scss";
+
+// global
+@import "mixins/mixins.scss";
+@import "variables.scss";
+@import "global.scss";
+
+// components
+@import "pages/home-page.scss";
+
+// components
+@import "components/pricer.scss";
