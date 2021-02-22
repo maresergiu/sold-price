@@ -14,9 +14,9 @@ describe('helper client function readFile', () => {
     expect(httpResponse).toEqual(response.data)
   })
 
-  it('should return a string if call fails /api/read-file', async () => {
+  it('should return an error if call fails /api/read-file', async () => {
     const response = {
-      data: 'no such file'
+      data: new Error({ message: 'no such file' })
     }
     axios.get.mockImplementationOnce(() => Promise.resolve(response))
 
