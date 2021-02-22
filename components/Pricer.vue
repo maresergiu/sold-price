@@ -19,21 +19,21 @@ export default {
   props: {
     priceArray: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
     maxHouseVal: {
       type: Number,
-      default: 10000000,
+      default: 10000000
     },
     colorPicker: {
       type: String,
-      default: 'generateColorPrice',
-    },
+      default: 'generateColorPrice'
+    }
   },
   data() {
     return {
       pricerWidth: null,
-      pricerHeight: null,
+      pricerHeight: null
     }
   },
   methods: {
@@ -44,16 +44,13 @@ export default {
           this.pricerWidth,
           this.pricerHeight
         ),
-        background: helpers[this.colorPicker](price[2], this.maxHouseVal),
+        background: helpers[this.colorPicker](price[2], this.maxHouseVal)
       }
-    },
+    }
   },
   mounted() {
     this.pricerWidth = this.$refs.pricer.clientWidth || 500
     this.pricerHeight = this.$refs.pricer.clientHeight || 500
-
-    console.log(this.pricerWidth)
-    console.log(this.pricerHeight)
-  },
+  }
 }
 </script>

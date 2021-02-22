@@ -1,9 +1,9 @@
-const express = require('express');
-const consola = require('consola');
-const { Nuxt, Builder } = require('nuxt');
-const app = express();
-const dotenv = require('dotenv');
-const nuxtConfig = require('../nuxt.config.js');
+const express = require('express')
+const consola = require('consola')
+const { Nuxt, Builder } = require('nuxt')
+const app = express()
+const dotenv = require('dotenv')
+const nuxtConfig = require('../nuxt.config.js')
 
 dotenv.config()
 

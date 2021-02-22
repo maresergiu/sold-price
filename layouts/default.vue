@@ -15,8 +15,7 @@ import SiteFooter from '@/components/SiteFooter.vue'
 export default {
   components: {
     SiteHeader,
-    SiteFooter,
-  },
+    SiteFooter
+  }
 }
 </script>
-

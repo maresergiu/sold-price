@@ -13,14 +13,14 @@ import { readFile } from '@/service/readFile.js'
 export default {
   data() {
     return {
-      priceArray: [],
+      priceArray: []
     }
   },
   components: {
-    Pricer,
+    Pricer
   },
   async mounted() {
     this.priceArray = await readFile('sold-price.json', 'utf8', 'sync')
-  },
+  }
 }
 </script>
