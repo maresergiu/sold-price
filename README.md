@@ -36,16 +36,16 @@ In order to make the run the solution please follow the bellow steps:
 - generate an env file based on the file .env.template
 - open the command line in the root source of the project and run `npm i`
 
-# install dependencies
+## install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+## serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+## build for production and launch server
 $ npm run build
 $ npm run start
 
-# generate static project
+## generate static project
 $ npm run generate
 
